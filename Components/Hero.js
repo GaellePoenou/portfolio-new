@@ -7,8 +7,8 @@ import TextEffect from "./TextEffect";
 
 const Hero = () => {
   return (
-    <div className="text-center p-10 bg-[url(../public/banner.jpg)] bg-cover h-full w-full ">
-      <div className="w-[80%] mx-auto  gap-[3rem] h-full items-center justify-center">
+    <div className="text-center p-10 bg-[url(../public/banner.jpg)] bg-cover  w-full bg-center mt-[12vh]">
+      <div className="w-[80%] mx-auto  gap-[3rem] h-full items-center justify-center mt[10vh]">
         <div className="">
           {" "}
           <h1 className="text-5xl font-bold  md:text-6xl">

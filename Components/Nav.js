@@ -9,8 +9,8 @@ const Nav = ({ openNav }) => {
     setShowMenu(!showMenu);
   };
   return (
-    <div className=" w-[100%] sticky z-[10000] top-0 h-[12vh] bg-transparent py-2 mb-12 flex justify-between">
-      <div className="flex items-center justify-between w-full mx-1 h-[100%]">
+    <div className=" w-[100%] fixed z-[10000] top-0 h-[12vh] bg-white py-2  px-2 mb-12 flex justify-between">
+      <div className="flex items-center justify-between w-full mx-1 h-full">
         <h1 className=" cursor-pointer text-xl text-black font-burtons">
           G<span className=" text-[#496a7a] font-bold">P</span>W
         </h1>
