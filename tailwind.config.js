@@ -10,7 +10,9 @@ module.exports = {
     extend: {
       fontFamily: {
         saira: "Saira",
+        lato: "lato",
         burtons: "burtons",
+        roboto: "roboto",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

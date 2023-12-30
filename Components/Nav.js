@@ -9,26 +9,27 @@ const Nav = ({ openNav }) => {
     setShowMenu(!showMenu);
   };
   return (
-    <div className=" w-[100%] top-0 h-[12vh] bg-white py-10 mb-12 flex justify-between">
-      <div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
+    <div className=" w-[100%] sticky z-[10000] top-0 h-[12vh] bg-transparent py-2 mb-12 flex justify-between">
+      <div className="flex items-center justify-between w-full mx-1 h-[100%]">
         <h1 className=" cursor-pointer text-xl text-black font-burtons">
-          P<span className=" text-teal-500 font-bold">G</span>W
+          G<span className=" text-[#496a7a] font-bold">P</span>W
         </h1>
-
-        <div className="nav-link">
-          <span>01.</span>Home
-        </div>
-        <div className="nav-link">
-          <span>02.</span>About Me
-        </div>
-        <div className="nav-link">
-          <span>03.</span>Services
-        </div>
-        <div className="nav-link">
-          <span>04.</span>Projects
-        </div>
-        <div className="nav-link">
-          <span>05.</span>Contact
+        <div className="flex items-center justify-center w-full mx-1 h-[100%]">
+          <div className="nav-link">
+            <span>01.</span>Home
+          </div>
+          <div className="nav-link">
+            <span>02.</span>About Me
+          </div>
+          <div className="nav-link">
+            <span>03.</span>Services
+          </div>
+          <div className="nav-link">
+            <span>04.</span>Projects
+          </div>
+          <div className="nav-link">
+            <span>05.</span>Contact
+          </div>
         </div>
 
         <div className="">
@@ -36,23 +37,23 @@ const Nav = ({ openNav }) => {
             <li>
               <BsFillMoonStarsFill
                 onClick={() => setDarkMode(!darkMode)}
-                className=" cursor-pointer text-2xl"
+                className=" cursor-pointer text-2xl hidden md:block"
               />
             </li>
 
             <li>
               <a
-                className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                className=" bg-[#496a7a] text-white px-4 py-2 rounded-md ml-8 hover:bg-[#8aa3a7] transition-all duration-200 sm:space-x-6 font-semibold font-saira hidden md:block"
                 href="#"
               >
-                Curriculum
+                C.V.
               </a>
             </li>
           </ul>
         </div>
         <div className="" onClick={openNav}>
           <div
-            className="cursor-pointer w-8 h-8 md:hidden text-teal-500"
+            className="cursor-pointer w-8 h-8 md:hidden text-[#496a7a]"
             onClick={toggleMenu}
           >
             ☰
