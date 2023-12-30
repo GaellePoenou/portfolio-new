@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,7 +28,11 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@font-face {
-  font-family: "burtons";
-  src: url("../public/Burtons.otf");
+@layer components {
+  .nav-link {
+    @apply relative font-semibold font-saira cursor-pointer w-fit lg:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-teal-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden;
+  }
+  .nav-link-mobile {
+    @apply relative mb-[2rem] font-semibold font-saira cursor-pointer text-white text-[27px] w-fit lg:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-teal-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
+  }
 }

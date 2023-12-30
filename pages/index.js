@@ -1,5 +1,7 @@
 import Head from "next/head";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import Nav from "@/Components/Nav";
+import MobileNav from "@/Components/MobileNav";
+
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import profil from "../public/profil-removebg-preview.png";
@@ -11,6 +13,9 @@ import { useState } from "react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [nav, setNav] = useState(false);
+  const openNav = () => setNav(true);
+  const closeNav = () => setNav(false);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -20,27 +25,10 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className=" text-xl font-burtons">Gaelle Poenou</h1>
-            <ul className=" flex items-center">
-              <li>
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
-                />
-              </li>
-              <li>
-                <a
-                  className=" bg-gradient-to-r from-gray-300 to-gray-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
-                >
-                  Curriculum
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <MobileNav nav={nav} closeNav={closeNav} />
+          <Nav openNav={openNav} />
           <div className=" text-center p-10">
-            <h2 className="text-5xl py-2 text-gray-600 font-medium md:text-6xl">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Gaelle Poenou
             </h2>
             <h3 className=" text-2xl py-2 md:text-3xl">
@@ -57,7 +45,7 @@ export default function Home() {
             <AiFillLinkedin />
             <AiFillGithub />
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-gray-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={profil} layout="fill" objectFit="cover" />
           </div>
         </section>
@@ -67,16 +55,16 @@ export default function Home() {
             <h3 className="text-3xl py-1">About me</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Diplômée récemment, je me lance en tant que{" "}
-              <span className="text-gray-500">développeuse web</span>. À la
+              <span className="text-teal-500">développeuse web</span>. À la
               recherche d'opportunités en freelance ou en tant que salarié, je
               m'engage à apporter créativité et compétences. Ma polyvalence
               s'étend du{" "}
-              <span className="text-gray-500">front-end au back-end</span>.
+              <span className="text-teal-500">front-end au back-end</span>.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               En tant que passionnée de développement web, j'explore constamment
               de nouvelles façons d'appliquer mes{" "}
-              <span className="text-gray-500">compétences</span> fraîchement
+              <span className="text-teal-500">compétences</span> fraîchement
               acquises.
             </p>
           </div>
@@ -95,7 +83,7 @@ export default function Home() {
                 Création de sites web offrant une expérience utilisateur
                 optimale sur différents appareils et tailles d'écrans.
               </p>
-              <h4 className="py-4 text-gray-600">Mes outils </h4>
+              <h4 className="py-4 text-teal-600">Mes outils </h4>
               <p className="text-gray-800 py-1">lorem</p>
               <p className="text-gray-800 py-1">lorem</p>
               <p className="text-gray-800 py-1">lorem</p>
@@ -114,7 +102,7 @@ export default function Home() {
                 Transformation de maquettes graphiques en pages web
                 interactives.
               </p>
-              <h4 className="py-4 text-gray-600">Mes outils </h4>
+              <h4 className="py-4 text-teal-600">Mes outils </h4>
               <p className="text-gray-800 py-1">lorem</p>
               <p className="text-gray-800 py-1">lorem</p>
               <p className="text-gray-800 py-1">lorem</p>
@@ -133,7 +121,7 @@ export default function Home() {
                 Résolution de bugs, mise à jour de contenus et optimisation de
                 la performance pour des sites déjà en ligne.
               </p>
-              <h4 className="py-4 text-gray-600">Mes outils </h4>
+              <h4 className="py-4 text-teal-600">Mes outils </h4>
               <p className="text-gray-800 py-1">lorem</p>
               <p className="text-gray-800 py-1">lorem</p>
               <p className="text-gray-800 py-1">lorem</p>
@@ -145,10 +133,10 @@ export default function Home() {
             <h3 className="text-3xl py-1">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Au cours de mes études, j'ai effectué un{" "}
-              <span className="text-gray-500">stage</span> pratique qui m'a
+              <span className="text-teal-500">stage</span> pratique qui m'a
               permis d'acquérir des compétences concrètes dans le domaine.
               Parallèlement, j'ai consacré du temps à des{" "}
-              <span className="text-gray-500">projets personnels</span>,
+              <span className="text-teal-500">projets personnels</span>,
               démontrant ma passion pour le design et le développement.
             </p>
             <p>
