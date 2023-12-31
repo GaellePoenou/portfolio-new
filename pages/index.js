@@ -3,6 +3,8 @@ import Nav from "@/Components/Nav";
 import MobileNav from "@/Components/MobileNav";
 import Hero from "@/Components/Hero";
 import About from "@/Components/About";
+import Services from "@/Components/Services";
+import Skills from "@/Components/Skills";
 
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
@@ -26,77 +28,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" bg-white dark:bg-gray-900 ">
-        {/* Section 1: Navigation */}
         <section>
           <MobileNav nav={nav} closeNav={closeNav} />
           <Nav openNav={openNav} />
         </section>
-        {/* Section 2: Hero */}
         <Hero />
-        {/* Section 3: About */}
-
-        <section>
-          <About />
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image
-                src={service1}
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Développement de sites web{" "}
-              </h3>
-              <p className="py-2">
-                Création de sites web offrant une expérience utilisateur
-                optimale sur différents appareils et tailles d'écrans.
-              </p>
-              <h4 className="py-4 text-[#496a7a]">Mes outils </h4>
-              <p className="text-gray-800 py-1">lorem</p>
-              <p className="text-gray-800 py-1">lorem</p>
-              <p className="text-gray-800 py-1">lorem</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image
-                src={service2}
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Intégration de maquettes
-              </h3>
-              <p className="py-2">
-                Transformation de maquettes graphiques en pages web
-                interactives.
-              </p>
-              <h4 className="py-4 text-[#496a7a]">Mes outils </h4>
-              <p className="text-gray-800 py-1">lorem</p>
-              <p className="text-gray-800 py-1">lorem</p>
-              <p className="text-gray-800 py-1">lorem</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image
-                src={service3}
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Maintenance de sites existants
-              </h3>
-              <p className="py-2">
-                Résolution de bugs, mise à jour de contenus et optimisation de
-                la performance pour des sites déjà en ligne.
-              </p>
-              <h4 className="py-4 text-[#496a7a]">Mes outils </h4>
-              <p className="text-gray-800 py-1">lorem</p>
-              <p className="text-gray-800 py-1">lorem</p>
-              <p className="text-gray-800 py-1">lorem</p>
-            </div>
-          </div>
-        </section>
+        <About />
+        <Services />
+        <Skills />
+        <Projects />
         <section className="py-10">
           <div className="">
             <h3 className="text-3xl py-1">Portfolio</h3>

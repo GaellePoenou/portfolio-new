@@ -21,7 +21,7 @@ const About = () => {
       </div>
       <div>
         <h3 className="text-3xl py-1 font-saira text-[#496a7a]">
-          01. About me
+          <span className="font-bold">01.</span>About me
         </h3>
         <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
           Diplômée récemment, je me lance en tant que{" "}
@@ -34,7 +34,8 @@ const About = () => {
         </p>
         <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
           Curieuse et polyvalente, j'explore constamment de nouvelles façons
-          d'appliquer mes <span className="text-[#496a7a]">compétences</span>{" "}
+          d'appliquer mes{" "}
+          <span className="text-[#496a7a] font-bold">compétences</span>{" "}
           fraîchement acquises.
         </p>
       </div>
