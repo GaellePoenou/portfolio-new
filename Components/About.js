@@ -4,7 +4,10 @@ import service1 from "../public/service1.png";
 const About = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
-      <div className="w-[300px] h-[300px] md:w-[300px] md:h-[300px] mx-auto relative hidden md:block">
+      <div
+        data-aos="fade-right"
+        className="w-[300px] h-[300px] md:w-[300px] md:h-[300px] mx-auto relative hidden md:block"
+      >
         <div className="absolute top-0 left-0 w-full h-full   dark:bg-white p-10 shadow-lg ">
           <Image
             src={service1}

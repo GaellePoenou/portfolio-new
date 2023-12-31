@@ -5,21 +5,44 @@ import Hero from "@/Components/Hero";
 import About from "@/Components/About";
 import Services from "@/Components/Services";
 import Skills from "@/Components/Skills";
+import Projects from "@/Components/Project";
+import Contact from "@/Components/Contact";
+import Footer from "@/Components/Footer";
 
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import Image from "next/image";
-import service1 from "../public/service1.png";
-import service2 from "../public/service2.png";
-import service3 from "../public/service3.png";
-
-import logo from "../public/logo.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [nav, setNav] = useState(false);
   const openNav = () => setNav(true);
   const closeNav = () => setNav(false);
+
+  useEffect(() => {
+    // You can also pass an optional settings object
+    // below listed default settings
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: "aos-init", // class applied after initialization
+      animatedClassName: "aos-animate", // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      once: true, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+    });
+  }, []);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -37,70 +60,8 @@ export default function Home() {
         <Services />
         <Skills />
         <Projects />
-        <section className="py-10">
-          <div className="">
-            <h3 className="text-3xl py-1">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Au cours de mes études, j'ai effectué un{" "}
-              <span className="text-[#496a7a]">stage</span> pratique qui m'a
-              permis d'acquérir des compétences concrètes dans le domaine.
-              Parallèlement, j'ai consacré du temps à des{" "}
-              <span className="text-[#496a7a]">projets personnels</span>,
-              démontrant ma passion pour le design et le développement.
-            </p>
-            <p>
-              Bien que je sois un jeune diplômée, je suis animé par une volonté
-              d'apprendre et de m'investir pleinement dans des projets
-            </p>
-          </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                src={logo}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                src={logo}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                src={logo}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                src={logo}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                src={logo}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-          </div>
-        </section>
+        <Contact />
+        <Footer />
       </main>
     </div>
   );
