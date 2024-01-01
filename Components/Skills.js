@@ -5,7 +5,7 @@ import SkillLanguage from "./SkillLanguage";
 const Skills = () => {
   return (
     <div
-      className=" pt-[1rem] md:pt-[4rem] pb-[5rem]
+      className=" pt-[4rem] md:pt-[8rem] pb-[5rem]
   "
     >
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
@@ -13,7 +13,7 @@ const Skills = () => {
           <span className="font-bold">03.</span>Skills
         </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[80%] mx-auto gap-[1rem] items-center pt-[1rem] md:pt-[4rem]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[80%] mx-auto gap-[1rem] items-center pt-[1rem] md:pt-[4rem] ">
         <div className="">
           <Skill title="Frontend" />
           <SkillLanguage
@@ -51,6 +51,7 @@ const Skills = () => {
           />
         </div>
       </div>
+      <div className="mx-auto w-1/2 p-5 border-b-4 border-[#496a7a]"></div>
     </div>
   );
 };

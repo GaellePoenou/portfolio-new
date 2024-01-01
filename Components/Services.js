@@ -54,6 +54,7 @@ const Services = () => {
           </p>
         </div>
       </div>
+      <div className="mx-auto w-1/2 p-5 border-b-4 border-[#496a7a]"></div>
     </div>
   );
 };

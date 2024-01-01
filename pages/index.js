@@ -51,17 +51,29 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" bg-white dark:bg-gray-900 ">
-        <section>
+        <section id="nav">
           <MobileNav nav={nav} closeNav={closeNav} />
           <Nav openNav={openNav} />
         </section>
         <Hero />
-        <About />
-        <Services />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
+        <section id="about">
+          <About />
+        </section>
+        <section id="services">
+          <Services />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+        <section id="footer">
+          <Footer />
+        </section>
       </main>
     </div>
   );

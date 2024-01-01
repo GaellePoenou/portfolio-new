@@ -6,8 +6,8 @@ import TextEffect from "./TextEffect";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 mx-auto gap-1 h-full items-center pt-32 p-10 w-full mt-15vh">
-      <div className="">
+    <div className="grid grid-cols-1 md:grid-cols-2 mx-auto gap-1 h-full items-center pt-32 p-10 w-full mt-15vh ">
+      <div className="border-r-2 border-[#496a7a]">
         <div className="w-80% mx-auto gap-3rem h-full flex flex-col justify-center items-center mt-10vh">
           <div className="">
             <h1 className="text-5xl font-bold md:text-6xl">
@@ -27,8 +27,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="hidden lg:flex w-[400px] relative items-center h-[400px]">
-        <Image src={banner} layout="fill" className="object-cover" />
+      <div className="hidden lg:flex w-[400px] relative items-center h-[400px] m-10 ">
+        <Image src={banner} layout="fill" className="object-cover rounded-xl" />
       </div>
     </div>
   );

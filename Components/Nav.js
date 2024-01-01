@@ -2,6 +2,8 @@ import React from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
 const Nav = ({ openNav }) => {
   const [darkMode, setDarkMode] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
@@ -17,23 +19,29 @@ const Nav = ({ openNav }) => {
         </h1>
         <div className="flex items-center justify-center w-full mx-1 h-[100%]">
           <div className="nav-link">
-            <a href="/">
+            <ScrollLink to="hero" smooth={true} duration={500}>
               <span>01.</span>Home
-            </a>
+            </ScrollLink>
           </div>
           <div className="nav-link">
-            <a href="/About">
+            <ScrollLink to="about" smooth={true} duration={500}>
               <span>02.</span>About Me
-            </a>
+            </ScrollLink>
           </div>
           <div className="nav-link">
-            <span>03.</span>Services
+            <ScrollLink to="services" smooth={true} duration={500}>
+              <span>03.</span>Services
+            </ScrollLink>
           </div>
           <div className="nav-link">
-            <span>04.</span>Projects
+            <ScrollLink to="projects" smooth={true} duration={500}>
+              <span>04.</span>Projects
+            </ScrollLink>
           </div>
           <div className="nav-link">
-            <span>05.</span>Contact
+            <ScrollLink to="contact" smooth={true} duration={500}>
+              <span>05.</span>Contact
+            </ScrollLink>
           </div>
         </div>
 
