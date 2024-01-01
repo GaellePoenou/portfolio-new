@@ -9,7 +9,7 @@ const About = () => {
         data-aos="fade-right"
         className="w-[300px] h-[300px] md:w-[300px] md:h-[300px] mx-auto relative hidden md:block"
       >
-        <div className="absolute top-0 left-0 w-full h-full   dark:bg-white p-10 shadow-lg ">
+        <div className="absolute top-0 left-0 w-full h-full    p-10 shadow-lg ">
           <Image
             src={profil}
             alt="service1"
@@ -23,7 +23,7 @@ const About = () => {
         <h3 className="text-3xl py-1 font-saira text-[#496a7a]">
           <span className="font-bold">01.</span>About me
         </h3>
-        <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+        <p className="text-md py-2 leading-8 text-gray-800 ">
           Diplômée récemment, je me lance en tant que{" "}
           <span className="text-[#496a7a] uppercase font-bold">
             développeuse web fullstack
@@ -32,7 +32,7 @@ const About = () => {
           <br />À la recherche d'opportunités en freelance ou en tant que
           salarié, je m'engage à apporter créativité et compétences.
         </p>
-        <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+        <p className="text-md py-2 leading-8 text-gray-800 ">
           Curieuse et polyvalente, j'explore constamment de nouvelles façons
           d'appliquer mes{" "}
           <span className="text-[#496a7a] font-bold">compétences</span>{" "}

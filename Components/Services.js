@@ -14,7 +14,7 @@ const Services = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] mx-auto gap-[3rem] items-center mt-[4rem]">
         <div
           data-aos="fade-down"
-          className="hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semi bold text-center bg-[#8aa3a7] shadow-lg p-8  dark:bg-white flex-1"
+          className="hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semi bold text-center bg-[#8aa3a7] shadow-lg p-8   flex-1"
         >
           <BsRocketTakeoff className="w-[6rem] h-[6rem] mx-auto " />
           <h3 className="text-xl font-bold pt-8 pb-2">
@@ -28,7 +28,7 @@ const Services = () => {
         <div
           data-aos="fade-down"
           data-aos-delay="300"
-          className="hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semi bold text-center bg-[#8aa3a7] shadow-lg p-8  dark:bg-white flex-1"
+          className="hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semi bold text-center bg-[#8aa3a7] shadow-lg p-8   flex-1"
         >
           <BsCodeSquare className="w-[6rem] h-[6rem] mx-auto " />
           <h3 className="text-xl font-bold pt-8 pb-2">
@@ -42,7 +42,7 @@ const Services = () => {
         <div
           data-aos="fade-down"
           data-aos-delay="600"
-          className="hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semi bold text-center bg-[#8aa3a7] shadow-lg p-8 dark:bg-white flex-1"
+          className="hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semi bold text-center bg-[#8aa3a7] shadow-lg p-8  flex-1"
         >
           <BsBraces className="w-[6rem] h-[6rem] mx-auto " />
           <h3 className="text-xl font-bold pt-8 pb-2">

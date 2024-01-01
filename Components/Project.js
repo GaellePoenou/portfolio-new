@@ -9,7 +9,7 @@ const Projects = ({ title }) => {
       <h1 className="text-center text-3xl py-1 font-saira text-[#496a7a]">
         <span className="font-bold">04.</span>Projects
       </h1>
-      <p className="text-center py-2 leading-8 text-gray-800 dark:text-gray-200 items-center">
+      <p className="text-center py-2 leading-8 text-gray-800  items-center">
         Au cours de mes études, j'ai effectué un{" "}
         <span className="text-[#496a7a] font-bold">stage</span> pratique qui m'a
         permis d'acquérir des compétences concrètes dans le domaine. <br />

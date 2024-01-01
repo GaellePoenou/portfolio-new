@@ -5,7 +5,6 @@ import { useState } from "react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const Nav = ({ openNav }) => {
-  const [darkMode, setDarkMode] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -47,13 +46,6 @@ const Nav = ({ openNav }) => {
 
         <div className="">
           <ul className=" flex items-center">
-            <li>
-              <BsFillMoonStarsFill
-                onClick={() => setDarkMode(!darkMode)}
-                className=" cursor-pointer text-2xl hidden md:block"
-              />
-            </li>
-
             <li>
               <a
                 className=" bg-[#496a7a] text-white px-4 py-2 rounded-md ml-8 hover:bg-[#8aa3a7] transition-all duration-200 sm:space-x-6 font-semibold font-saira hidden md:block"
