@@ -1,18 +1,22 @@
+// Footer.js
 import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" pt-[1rem] pb-[1rem] bg-[#496a7a]">
-      <div className="mt-[1rem] flex justify-between  grid-cols-1 lg:grid-cols-3 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] ">
-        <div className="text-[18px] text-white mb-[2rem] md:mb-0">
-          GPW 2023 | All Rights Reserved
+    <footer className="bg-[#496a7a] text-white p-4 text-center ">
+      <div className="container mx-auto">
+        <div className="font-saira flex justify-center space-x-4">
+          <a href="#home">Accueil</a>
+          <a href="#about">À propos</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projets</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div className="flex items-center space-x-10">
-          <p className="text-[18px] text-white">Conditions Générales</p>
-          <p className="text-[18px] text-white">Politique de confidentialité</p>
+        <div className="mt-4">
+          <p>&copy; {new Date().getFullYear()} GPW. Tous droits réservés.</p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
