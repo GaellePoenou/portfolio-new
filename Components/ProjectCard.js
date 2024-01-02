@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 const ProjectCard = ({ project }) => {
   const [showDetails, setShowDetails] = useState(false);
@@ -9,11 +10,13 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div className="relative">
-      <img
+      <Image
         src={project.thumbnail}
         alt={project.title}
         className="cursor-pointer rounded-md hover:shadow-lg transition-all duration-300"
         onClick={toggleDetails}
+        width={500}
+        height={300}
       />
 
       {showDetails && (
@@ -29,10 +32,12 @@ const ProjectCard = ({ project }) => {
             </div>
             <div className="flex mt-4">
               <div className="w-1/2">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
                   className="max-h-96 max-w-full object-contain"
+                  width={500}
+                  height={300}
                 />
               </div>
               <div className="w-1/2 ml-4">
@@ -48,7 +53,6 @@ const ProjectCard = ({ project }) => {
                 >
                   Voir sur GitHub
                 </a>
-                {/* Ajoutez d'autres liens si nécessaire */}
               </div>
             </div>
           </div>

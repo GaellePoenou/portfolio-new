@@ -29,12 +29,12 @@ const About = () => {
             développeuse web fullstack
           </span>
           .
-          <br />À la recherche d'opportunités en freelance ou en tant que
-          salarié, je m'engage à apporter créativité et compétences.
+          <br />À la recherche d &apos;opportunités en freelance ou en tant que
+          salarié, je m &apos;engage à apporter créativité et compétences.
         </p>
         <p className="text-md py-2 leading-8 text-gray-800 ">
-          Curieuse et polyvalente, j'explore constamment de nouvelles façons
-          d'appliquer mes{" "}
+          Curieuse et polyvalente, j &apos;explore constamment de nouvelles
+          façons d &apos;appliquer mes{" "}
           <span className="text-[#496a7a] font-bold">compétences</span>{" "}
           fraîchement acquises.
         </p>

@@ -77,10 +77,11 @@ const Projects = ({}) => {
         <span className="font-bold">04.</span>Projects
       </h1>
       <p className="text-center py-2 leading-8 text-gray-800  items-center">
-        Au cours de mes études, j'ai effectué un{" "}
-        <span className="text-[#496a7a] font-bold">stage</span> pratique qui m'a
-        permis d'acquérir des compétences concrètes dans le domaine. <br />
-        Parallèlement, j'ai consacré du temps à des{" "}
+        Au cours de mes études, j &apos;ai effectué un{" "}
+        <span className="text-[#496a7a] font-bold">stage</span> pratique qui m
+        &apos;a permis d &apos;acquérir des compétences concrètes dans le
+        domaine. <br />
+        Parallèlement, j &apos;ai consacré du temps à des{" "}
         <span className="text-[#496a7a] font-bold">projets personnels</span>,
         démontrant ma passion pour le design et le développement.
       </p>

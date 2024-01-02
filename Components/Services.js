@@ -22,7 +22,7 @@ const Services = () => {
           </h3>
           <p className="py-2 text-lg">
             Création de sites web offrant une expérience utilisateur optimale
-            sur différents appareils et tailles d'écrans.
+            sur différents appareils et tailles d &apos;écrans.
           </p>
         </div>
         <div
