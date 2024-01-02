@@ -1,13 +1,10 @@
 {
-  "name": "portfolio-new",
+  
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "export": "next export",
     "start": "next start",
-    "deploy": "npm run build && npm run export && touch out/.nojekyll",
     "lint": "next lint"
   },
   "dependencies": {
