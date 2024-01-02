@@ -7,49 +7,64 @@ import logo from "../public/logo.png";
 const projectList = [
   {
     title: "Projet 1",
-    image: "/logo.png",
+    thumbnail: "/thumbnail1.png",
+    image: "/image1.png",
     description: "Description du projet 1.",
     githubLink: "https://github.com/votre-utilisateur/projet1",
   },
   {
     title: "Projet 2",
-    image: "/logo.png",
-    description: "Description du projet 2.",
+    thumbnail: "/thumbnail2.png",
+    image: "/image2.png",
+    description: "Description du projet 1.",
     githubLink: "https://github.com/votre-utilisateur/projet1",
   },
   {
     title: "Projet 3",
-    image: "/logo.png",
-    description: "Description du projet 3.",
-    githubLink: "https://github.com/votre-utilisateur/projet1",
-  },
-  {
-    title: "Projet 1",
-    image: "/logo.png",
+    thumbnail: "/thumbnail3.png",
+    image: "/image3.png",
     description: "Description du projet 1.",
     githubLink: "https://github.com/votre-utilisateur/projet1",
   },
   {
-    title: "Projet 1",
-    image: "/logo.png",
+    title: "Projet 4",
+    thumbnail: "/thumbnail4.png",
+    image: "/image4.png",
     description: "Description du projet 1.",
     githubLink: "https://github.com/votre-utilisateur/projet1",
   },
   {
-    title: "Projet 1",
-    image: "/logo.png",
+    title: "Projet 5",
+    thumbnail: "/thumbnail5.png",
+    image: "/image5.png",
     description: "Description du projet 1.",
     githubLink: "https://github.com/votre-utilisateur/projet1",
   },
   {
-    title: "Projet 1",
-    image: "/logo.png",
+    title: "Projet 6",
+    thumbnail: "/thumbnail6.png",
+    image: "/image6.png",
     description: "Description du projet 1.",
     githubLink: "https://github.com/votre-utilisateur/projet1",
   },
   {
-    title: "Projet 1",
-    image: "/logo.png",
+    title: "Projet 7",
+    thumbnail: "/thumbnail7.png",
+    image: "/image7.png",
+    description: "Description du projet 1.",
+    githubLink: "https://github.com/votre-utilisateur/projet1",
+  },
+  {
+    title: "Projet 8",
+    thumbnail: "/thumbnail8.png",
+    image: "/image8.png",
+    description: "Description du projet 1.",
+    githubLink: "https://github.com/votre-utilisateur/projet1",
+  },
+  {
+    title: "Projet 9",
+    thumbnail: "/thumbnail9.png",
+    image: "/image9.png",
     description: "Description du projet 1.",
     githubLink: "https://github.com/votre-utilisateur/projet1",
   },
@@ -75,7 +90,7 @@ const Projects = ({}) => {
           <div
             key={index}
             data-aos="zoom-in"
-            className="transform cursor-pointer hover:translate-y-6 transition-all duration-200 relative w-full h-[200px] md:h-[300px] flex flex-col gap-10 p-10 lg:flex-row lg:flex-wrap"
+            className="transform cursor-pointer hover:translate-y-6 transition-all duration-200 relative w-full h-[200px] md:h-[300px] flex flex-col gap-10 p-5 lg:flex-row lg:flex-wrap"
           >
             <ProjectCard project={project} />
           </div>
