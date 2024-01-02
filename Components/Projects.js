@@ -2,71 +2,71 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 
 import Image from "next/image";
-import logo from "../public/logo.png";
 
 const projectList = [
   {
     title: "Projet 1",
     thumbnail: "/thumbnail1.png",
     image: "/image1.png",
-    description: "Description du projet 1.",
-    githubLink: "https://github.com/votre-utilisateur/projet1",
+    description: "Landing Page Restaurant : React.js CRA.",
+    githubLink: "https://github.com/GaellePoenou/landing-page",
   },
   {
     title: "Projet 2",
     thumbnail: "/thumbnail2.png",
     image: "/image2.png",
-    description: "Description du projet 1.",
-    githubLink: "https://github.com/votre-utilisateur/projet1",
+    description: "To-do-List : HTML CSS JS",
+    githubLink: "https://github.com/GaellePoenou/To-Do-List",
   },
   {
     title: "Projet 3",
     thumbnail: "/thumbnail3.png",
     image: "/image3.png",
-    description: "Description du projet 1.",
-    githubLink: "https://github.com/votre-utilisateur/projet1",
+    description: "Portfolio : React.js CRA",
+    githubLink: "https://github.com/GaellePoenou/portfolio",
   },
   {
     title: "Projet 4",
     thumbnail: "/thumbnail4.png",
     image: "/image4.png",
-    description: "Description du projet 1.",
-    githubLink: "https://github.com/votre-utilisateur/projet1",
+    description:
+      "Convertisseur Texte à Audio: HTML CSS JS + API de synthèse vocale native",
+    githubLink: "https://github.com/GaellePoenou/Convertisseur-text-audio",
   },
   {
     title: "Projet 5",
     thumbnail: "/thumbnail5.png",
     image: "/image5.png",
-    description: "Description du projet 1.",
-    githubLink: "https://github.com/votre-utilisateur/projet1",
+    description: "Meteo : HTML CSS JS + API OpenWeather ",
+    githubLink: "https://github.com/GaellePoenou/meteo",
   },
   {
     title: "Projet 6",
     thumbnail: "/thumbnail6.png",
     image: "/image6.png",
-    description: "Description du projet 1.",
-    githubLink: "https://github.com/votre-utilisateur/projet1",
+    description: "NewsApp: React.js Vite + API NewsApi",
+    githubLink: "https://github.com/GaellePoenou/news-app",
   },
   {
     title: "Projet 7",
     thumbnail: "/thumbnail7.png",
     image: "/image7.png",
-    description: "Description du projet 1.",
-    githubLink: "https://github.com/votre-utilisateur/projet1",
+    description: "Portfolio: HTML CSS",
+    githubLink: "https://github.com/GaellePoenou/RobbieLens",
   },
   {
     title: "Projet 8",
     thumbnail: "/thumbnail8.png",
     image: "/image8.png",
-    description: "Description du projet 1.",
-    githubLink: "https://github.com/votre-utilisateur/projet1",
+    description: "TravekSite: HTML CSS JS",
+    githubLink: "https://github.com/GaellePoenou/TravelSite",
   },
   {
     title: "Projet 9",
     thumbnail: "/thumbnail9.png",
     image: "/image9.png",
-    description: "Description du projet 1.",
-    githubLink: "https://github.com/votre-utilisateur/projet1",
+    description: "Ecommerce: Wordpress + Flatsome",
+    githubLink: "https://afroamericain.fr",
   },
 ];
 

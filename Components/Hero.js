@@ -20,15 +20,38 @@ const Hero = () => {
               Contactez-moi pour discuter de vos projets!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-black-600">
-              <AiFillFilePdf />
-              <AiFillLinkedin />
-              <AiFillGithub />
+              <a
+                href="CV-Gaelle-Poenou.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillFilePdf />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/gaellepoenou/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillLinkedin />
+              </a>
+              <a
+                href="https://github.com/GaellePoenou"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillGithub />
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div className="hidden lg:flex w-[400px] relative items-center h-[400px] m-10 ">
-        <Image src={banner} layout="fill" className="object-cover rounded-xl" />
+        <Image
+          alt="banner"
+          src={banner}
+          layout="fill"
+          className="object-cover rounded-xl"
+        />
       </div>
     </div>
   );
