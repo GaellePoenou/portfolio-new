@@ -1,13 +1,13 @@
 import Head from "next/head";
-import Nav from "@/components/Nav";
-import MobileNav from "@/components/MobileNav";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Services from "@/components/Services";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Nav from "@/Components/Nav";
+import MobileNav from "@/Components/MobileNav";
+import Hero from "@/Components/Hero";
+import About from "@/Components/About";
+import Services from "@/Components/Services";
+import Skills from "@/Components/Skills";
+import Projects from "@/Components/Projects";
+import Contact from "@/Components/Contact";
+import Footer from "@/Components/Footer";
 
 import { useState, useEffect } from "react";
 import AOS from "aos";
