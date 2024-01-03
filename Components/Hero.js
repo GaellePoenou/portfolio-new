@@ -49,8 +49,7 @@ const Hero = () => {
         <Image
           alt="banner"
           src={banner}
-          layout="fill"
-          className="object-cover rounded-xl"
+          className="object-cover rounded-xl fill"
         />
       </div>
     </div>

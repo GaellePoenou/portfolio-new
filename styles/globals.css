@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -35,11 +35,45 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer components {
-  .nav-link {
-    @apply relative mx-2 font-semibold font-saira cursor-pointer w-fit lg:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#496a7a] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden;
-  }
-  .nav-link-mobile {
-    @apply relative mb-[2rem] font-semibold font-saira cursor-pointer text-white text-[27px] w-fit lg:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#496a7a] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
-  }
+.nav-link {
+  position: relative;
+  margin: 0 2px;
+  font-weight: 600;
+  font-family: "Saira", sans-serif;
+  cursor: pointer;
+  width: fit-content;
+  display: lg;
+  position: after;
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #496a7a;
+  width: 100%;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 300ms;
+  transform-origin: center;
+  display: none;
+}
+
+.nav-link-mobile {
+  position: relative;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-family: "Saira", sans-serif;
+  cursor: pointer;
+  color: white;
+  font-size: 27px;
+  width: fit-content;
+  display: lg;
+  position: after;
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #496a7a;
+  width: 100%;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 300ms;
+  transform-origin: center;
 }

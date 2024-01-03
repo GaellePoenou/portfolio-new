@@ -13,9 +13,7 @@ const About = () => {
           <Image
             src={profil}
             alt="service1"
-            layout="fill"
-            objectFit="contain"
-            className="relative z-[11] w-full object-contain border-2 border-[#496a7a] rounded-xl p-10"
+            className="relative z-[11] w-full object-cover border-2 border-[#496a7a] rounded-xl p-10"
           />
         </div>
       </div>
