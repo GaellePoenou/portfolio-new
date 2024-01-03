@@ -3,7 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   output: "export",
   images: {
-    unoptimized: true,
+    loader: "custom",
+    loaderFile: "./my-loader.ts",
   },
 
   exportPathMap: async function () {
